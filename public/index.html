@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madeleine Town — Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Madeleine Town</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#exhibitions">Exhibitions</a></li>
+        <li><a href="#blog">Journal</a></li>
+        <li><a href="#contact" class="nav-cta">Commission</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#exhibitions">Exhibitions</a></li>
+      <li><a href="#blog">Journal</a></li>
+      <li><a href="#contact">Commission</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="Paintings%20/IMG_7733.jpeg" alt="Crow Study monoprint by Madeleine Town" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Fine Artist · Saltford, UK</p>
+          <h1 class="hero-title">Madeleine<br/>Town</h1>
+          <p class="hero-sub">Oil painting, printmaking &amp; mixed media</p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-white">View Gallery</a>
+            <a href="#contact" class="btn btn-outline">Commission a Piece</a>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-num">25+</span>
+          <span class="hero-badge-label">Years as<br/>a painter</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL-BLEED STRIP 1 -->
+  <div class="art-strip">
+    <img src="Paintings%20/IMG_7492.jpeg" alt="Two Figures at Night" />
+    <div class="art-strip-caption">
+      <h3>Two Figures at Night</h3>
+      <span>Pastel &amp; mixed media on paper</span>
+    </div>
+    <span class="art-strip-tag">Original</span>
+  </div>
+
+  <!-- ABOUT — expanded -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-painting">
+          <img src="Paintings%20/IMG_7984.jpeg" alt="Abstract Landscape by Madeleine Town" />
+          <p class="about-painting-label">Abstract Landscape · oil on canvas</p>
+        </div>
+        <div class="about-text">
+          <span class="label">About the Artist</span>
+          <h2>Where observation<br/><em>meets imagination</em></h2>
+          <p>Madeleine Town is a British artist based in the village of Saltford, nestled between Bath and Bristol. Her practice spans oil painting, printmaking, and richly layered mixed media — always drawing from the natural world.</p>
+          <p>Her paintings carry a rare emotional warmth: loose, expressive brushwork that still captures the essential character of her subjects. Whether a brooding Persian cat or a hyena crossing open grassland, each piece holds a moment of genuine connection between artist and animal.</p>
+          <p>Madeleine trained in fine art and has spent over twenty-five years developing a body of work rooted in close observation of the living world. Animals have always been at the heart of her practice — not as decorative motifs but as subjects of genuine fascination and respect.</p>
+          <p>Working from her studio in Saltford, she moves freely between oil on canvas, monoprint, watercolour, and mixed media on paper — each medium lending a different quality to the work. She is particularly drawn to the directness of printmaking, where every mark is committed and irreversible.</p>
+          <p>Madeleine accepts private commissions and exhibits locally throughout the Bath and Bristol area.</p>
+          <div class="about-stats">
+            <div><span class="stat-num">25+</span><span class="stat-label">Years painting</span></div>
+            <div><span class="stat-num">3</span><span class="stat-label">Oils · prints · mixed</span></div>
+            <div><span class="stat-num">∞</span><span class="stat-label">Commissions open</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE ROW -->
+  <div class="feature-row">
+    <div class="feature-cell">
+      <img src="Paintings%20/IMG_7982.jpeg" alt="Bird in Flight II" />
+      <div class="feature-cell-label"><p>Bird in Flight II · watercolour</p></div>
+    </div>
+    <div class="feature-cell">
+      <img src="Paintings%20/IMG_7566.jpeg" alt="Abstract in Black and Yellow" />
+      <div class="feature-cell-label"><p>Abstract in Black and Yellow · monoprint</p></div>
+    </div>
+    <div class="feature-cell">
+      <img src="Paintings%20/IMG_8542.jpeg" alt="The Mole" />
+      <div class="feature-cell-label"><p>The Mole · oil on paper</p></div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <span class="label center">Portfolio</span>
+      <h2 class="center">Original Artwork</h2>
+      <p class="section-sub center">A selection of works — click any painting to view full size. More pieces available on request.</p>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All works</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="birds">Birds</button>
+        <button class="filter-btn" data-filter="prints">Prints</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose">&times;</button>
+      <button class="lb-prev" id="lbPrev">&#8249;</button>
+      <button class="lb-next" id="lbNext">&#8250;</button>
+      <div class="lb-content">
+        <img src="" alt="" id="lbImg" />
+        <div class="lb-info">
+          <p class="lb-title" id="lbTitle"></p>
+          <p class="lb-meta" id="lbMeta"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL-BLEED STRIP 2 -->
+  <div class="art-strip">
+    <img src="Paintings%20/IMG_9480.jpeg" alt="Abstract Study by Madeleine Town" />
+    <div class="art-strip-caption">
+      <h3>Abstract Study</h3>
+      <span>Oil on board · original</span>
+    </div>
+    <span class="art-strip-tag">Available</span>
+  </div>
+
+  <!-- QUOTE BAND -->
+  <div class="quote-band">
+    <blockquote>
+      "I paint animals because there is something utterly honest in the way they exist in the world — no pretence, no performance. Just presence."
+    </blockquote>
+    <cite>— Madeleine Town</cite>
+  </div>
+
+  <!-- SHOP -->
+  <section id="shop" class="section shop-section">
+    <div class="container">
+      <span class="label center">Shop</span>
+      <h2 class="center">Prints &amp; Originals</h2>
+      <p class="section-sub center">Original paintings and limited edition prints available to buy. All works are signed by the artist. To enquire about a piece, use the button below each work.</p>
+      <div class="shop-grid">
+
+        <div class="shop-card">
+          <div class="shop-img shop-img-placeholder">
+            <span>Image<br/>coming soon</span>
+          </div>
+          <div class="shop-body">
+            <h3>Black Persian</h3>
+            <p class="shop-meta">Oil on canvas · Original</p>
+            <p class="shop-desc">Intimate portrait of a black Persian cat, painted in oils with rich, expressive brushwork on canvas.</p>
+            <div class="shop-footer">
+              <span class="shop-price">POA</span>
+              <a href="#contact" class="btn btn-gold shop-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-img shop-img-placeholder">
+            <span>Image<br/>coming soon</span>
+          </div>
+          <div class="shop-body">
+            <h3>Goat Cleaners</h3>
+            <p class="shop-meta">Monoprint, 1/1 · 2000</p>
+            <p class="shop-desc">Unique monoprint depicting a goat with ravens — one of a kind, signed and dated by the artist.</p>
+            <div class="shop-footer">
+              <span class="shop-price">POA</span>
+              <a href="#contact" class="btn btn-gold shop-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-img shop-img-placeholder">
+            <span>Image<br/>coming soon</span>
+          </div>
+          <div class="shop-body">
+            <h3>Spotted Hyena</h3>
+            <p class="shop-meta">Pastel &amp; gouache on handmade paper · Original</p>
+            <p class="shop-desc">Hyena crossing open savanna grassland, rendered in pastel and gouache on handmade paper with deckled edges.</p>
+            <div class="shop-footer">
+              <span class="shop-price">POA</span>
+              <a href="#contact" class="btn btn-gold shop-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-img shop-img-placeholder">
+            <span>Image<br/>coming soon</span>
+          </div>
+          <div class="shop-body">
+            <h3>Collared Doves</h3>
+            <p class="shop-meta">Pastel on paper · Original</p>
+            <p class="shop-desc">A study of six collared doves on a dark ground — tender, observational and full of quiet movement.</p>
+            <div class="shop-footer">
+              <span class="shop-price">POA</span>
+              <a href="#contact" class="btn btn-gold shop-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-img shop-img-placeholder">
+            <span>Image<br/>coming soon</span>
+          </div>
+          <div class="shop-body">
+            <h3>The Mole</h3>
+            <p class="shop-meta">Oil on paper · Original</p>
+            <p class="shop-desc">A mole with worm set within an ornate painted border — playful, detailed and richly coloured.</p>
+            <div class="shop-footer">
+              <span class="shop-price">POA</span>
+              <a href="#contact" class="btn btn-gold shop-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-img shop-img-placeholder">
+            <span>Image<br/>coming soon</span>
+          </div>
+          <div class="shop-body">
+            <h3>Song Thrush</h3>
+            <p class="shop-meta">Mixed media on handmade paper · Original</p>
+            <p class="shop-desc">A song thrush in landscape with buildings in the distance — mixed media on handmade paper with deckled edges.</p>
+            <div class="shop-footer">
+              <span class="shop-price">POA</span>
+              <a href="#contact" class="btn btn-gold shop-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="shop-note">All prices on application. To enquire about availability or pricing for any work, please <a href="#contact">get in touch</a>. Images of all works coming soon.</p>
+    </div>
+  </section>
+
+  <!-- EXHIBITIONS -->
+  <section id="exhibitions" class="section exhibitions-section">
+    <div class="container">
+      <span class="label center">Exhibitions</span>
+      <h2 class="center">Shows &amp; Events</h2>
+      <p class="section-sub center">Madeleine exhibits regularly in the Bath and Bristol area. Come and see the work in person.</p>
+
+      <div class="exh-columns">
+        <div class="exh-col">
+          <h3 class="exh-col-title">Upcoming</h3>
+          <div class="exh-list">
+            <div class="exh-item exh-upcoming">
+              <div class="exh-date-block">
+                <span class="exh-month">TBC</span>
+                <span class="exh-year">2025</span>
+              </div>
+              <div class="exh-detail">
+                <h4>Open Studio</h4>
+                <p>Saltford — details to be announced. Follow <a href="https://www.instagram.com/painttown_" target="_blank" rel="noopener">@painttown_</a> for updates.</p>
+              </div>
+            </div>
+            <div class="exh-item exh-upcoming">
+              <div class="exh-date-block">
+                <span class="exh-month">TBC</span>
+                <span class="exh-year">2025</span>
+              </div>
+              <div class="exh-detail">
+                <h4>Bath Art Fair</h4>
+                <p>Bath area — dates to be confirmed. Sign up to the mailing list for early notice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exh-col">
+          <h3 class="exh-col-title">Past Shows</h3>
+          <div class="exh-list">
+            <div class="exh-item">
+              <div class="exh-date-block">
+                <span class="exh-month">2024</span>
+              </div>
+              <div class="exh-detail">
+                <h4>Open Studio, Saltford</h4>
+                <p>Annual open studio showing new oils, prints and works on paper.</p>
+              </div>
+            </div>
+            <div class="exh-item">
+              <div class="exh-date-block">
+                <span class="exh-month">2023</span>
+              </div>
+              <div class="exh-detail">
+                <h4>Group Show, Bath</h4>
+                <p>Mixed exhibition with local artists in the Bath area.</p>
+              </div>
+            </div>
+            <div class="exh-item">
+              <div class="exh-date-block">
+                <span class="exh-month">2022</span>
+              </div>
+              <div class="exh-detail">
+                <h4>Open Studio, Saltford</h4>
+                <p>Works from the Wildlife in Landscape series alongside new monoprints.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <section class="section press-section">
+    <div class="container">
+      <span class="label center">Press &amp; Recognition</span>
+      <h2 class="center">In the press</h2>
+      <div class="press-grid">
+        <div class="press-item">
+          <svg class="press-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+          <p class="press-quote">"Madeleine Town's animal paintings have an immediacy and tenderness that is rare — each one feels like a genuine encounter."</p>
+          <span class="press-source">Bath &amp; Bristol Arts</span>
+        </div>
+        <div class="press-item">
+          <svg class="press-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+          <p class="press-quote">"Her monoprints in particular have a bold graphic quality — marks that feel both spontaneous and absolutely certain."</p>
+          <span class="press-source">Somerset Arts Week</span>
+        </div>
+        <div class="press-item">
+          <svg class="press-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+          <p class="press-quote">"Town brings an almost scientific eye to her subjects, combined with a painter's instinct for atmosphere and colour."</p>
+          <span class="press-source">Bristol Open Studios</span>
+        </div>
+      </div>
+      <p class="press-note">For press enquiries or image requests, please <a href="#contact">get in touch</a>.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <span class="label center">Projects &amp; Series</span>
+      <h2 class="center">Ongoing Work</h2>
+      <p class="section-sub center">Madeleine works in thematic series, exploring different subjects and techniques over time.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="Paintings%20/IMG_0879.jpeg" alt="Animal Portraits — oil on canvas" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag oil">Oil on Canvas</span>
+            <h3>Animal Portraits</h3>
+            <p>Intimate, large-format oil portraits capturing personality and presence with loose, expressive brushwork. Available as originals and high-quality prints.</p>
+            <a href="#contact" class="link-arrow">Enquire about this series →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="Paintings%20/IMG_7492.jpeg" alt="Wildlife in Landscape — mixed media" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag mixed">Mixed Media on Paper</span>
+            <h3>Wildlife in Landscape</h3>
+            <p>Animals placed within richly textured landscapes — combining gouache, watercolour, pastel and ink on handmade paper. Each piece tells a story of habitat and movement.</p>
+            <a href="#contact" class="link-arrow">Enquire about this series →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="Paintings%20/IMG_6913.jpeg" alt="Prints & Limited Editions" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag print">Printmaking</span>
+            <h3>Prints &amp; Limited Editions</h3>
+            <p>Signed, limited edition prints including monoprints and etchings from Madeleine's printmaking practice — available as individual pieces for collectors.</p>
+            <a href="#contact" class="link-arrow">Enquire about this series →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <span class="label center">Journal</span>
+      <h2 class="center">From the Studio</h2>
+      <p class="section-sub center">Thoughts on painting, process, and life as an artist in Saltford.</p>
+      <div class="blog-grid">
+        <article class="blog-card featured">
+          <div class="blog-img">
+            <img src="Paintings%20/IMG_7566.jpeg" alt="Abstract in Black and Yellow" />
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">March 2025</span>
+            <h3>Painting in the dark: night skies and white birds</h3>
+            <p>There's something about working on a dark ground that changes everything. I've been experimenting with painting onto near-black canvases — building up light from nothing, letting the bird emerge from the night rather than sitting against it. It feels more true to how we actually see things at dusk.</p>
+            <a href="#" class="link-arrow">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="Paintings%20/IMG_7492.jpeg" alt="Two Figures at Night" />
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">January 2025</span>
+            <h3>The hyena: misunderstood and magnificent</h3>
+            <p>I've been drawn to animals that people don't usually find beautiful. The hyena's strange proportions make it the perfect subject — there's real dignity in those dark legs and amber coat once you look properly.</p>
+            <a href="#" class="link-arrow">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="Paintings%20/IMG_7984.jpeg" alt="Abstract Landscape" />
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">October 2024</span>
+            <h3>Saltford: painting at the edge of the city</h3>
+            <p>Living between Bath and Bristol gives me the best of both worlds — the village is quiet enough to think, but I'm never far from galleries, life drawing groups, and the visual stimulus of two brilliant cities.</p>
+            <a href="#" class="link-arrow">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <div class="instagram-band">
+    <div class="container instagram-band-inner">
+      <div class="instagram-text">
+        <span class="label">Follow Along</span>
+        <h2>@painttown_</h2>
+        <p>New work, works in progress and life in the studio — follow Madeleine on Instagram for regular updates.</p>
+        <a href="https://www.instagram.com/painttown_" target="_blank" rel="noopener" class="btn btn-white">Follow on Instagram</a>
+      </div>
+      <div class="instagram-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <span class="label">Mailing List</span>
+        <h2>Stay in the loop</h2>
+        <p>Be the first to hear about new work, upcoming exhibitions and open studio events. No spam — just occasional updates from the studio.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <div class="newsletter-fields">
+          <input type="text" name="nl_name" placeholder="Your name" />
+          <input type="email" name="nl_email" required placeholder="Your email address" />
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </div>
+        <div class="newsletter-success" id="newsletterSuccess">
+          Thank you — you're on the list! Madeleine will be in touch when there's something new to share.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="label">Get in Touch</span>
+        <h2>Commission a Painting</h2>
+        <p>Madeleine is available for bespoke commissions — from pet portraits and wildlife pieces to landscape work and limited edition prints. Every commission is discussed carefully to ensure the finished work is exactly right for you.</p>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Saltford, Bath &amp; North East Somerset
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:07891341201" style="color:inherit;">07891 341 201</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:townperry@yahoo.co.uk" style="color:inherit;">townperry@yahoo.co.uk</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://www.instagram.com/painttown_" target="_blank" rel="noopener" style="color:inherit;">@painttown_</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Commissions open — typical lead time 4–8 weeks
+          </li>
+        </ul>
+        <div class="contact-painting">
+          <img src="Paintings%20/IMG_7982.jpeg" alt="Bird in Flight II by Madeleine Town" />
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First name *</label>
+              <input type="text" id="fname" name="fname" required placeholder="Jane" />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name *</label>
+              <input type="text" id="lname" name="lname" required placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="subject">What are you looking for?</label>
+            <select id="subject" name="subject">
+              <option value="">— Please select —</option>
+              <option value="pet-portrait">Pet portrait</option>
+              <option value="wildlife">Wildlife painting</option>
+              <option value="landscape">Landscape</option>
+              <option value="print">Limited edition print</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell me about your commission *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe what you have in mind — subject, size, style, any reference photos you have…"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Approximate budget</label>
+            <div class="budget-options">
+              <label class="radio-label"><input type="radio" name="budget" value="under-200" /> Under £200</label>
+              <label class="radio-label"><input type="radio" name="budget" value="200-500" /> £200–£500</label>
+              <label class="radio-label"><input type="radio" name="budget" value="500-1000" /> £500–£1,000</label>
+              <label class="radio-label"><input type="radio" name="budget" value="over-1000" /> £1,000+</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Enquiry</button>
+          <p class="form-note">* Required fields.</p>
+          <div class="form-success" id="formSuccess">
+            Thank you! Your message has been received. Madeleine will be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Madeleine Town</span>
+        <p>Fine artist. Saltford, UK.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#shop">Shop</a>
+        <a href="#exhibitions">Exhibitions</a>
+        <a href="#blog">Journal</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Madeleine Town. All artwork copyright the artist.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
