@@ -162,6 +162,96 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 
 buildGallery();
 
+// ── Cart ──
+let cart = [];
+
+const cartDrawer = document.getElementById('cartDrawer');
+const cartOverlay = document.getElementById('cartOverlay');
+const cartCountEl = document.getElementById('cartCount');
+const cartItemsEl = document.getElementById('cartItems');
+const cartFooter = document.getElementById('cartFooter');
+const cartTotalEl = document.getElementById('cartTotal');
+
+function openCart() {
+  cartDrawer.classList.add('open');
+  cartOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCart() {
+  cartDrawer.classList.remove('open');
+  cartOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('cartBtn').addEventListener('click', openCart);
+document.getElementById('cartClose').addEventListener('click', closeCart);
+cartOverlay.addEventListener('click', closeCart);
+
+function updateCart() {
+  const total = cart.reduce((sum, item) => sum + item.price, 0);
+  cartCountEl.textContent = cart.length;
+  cartCountEl.style.display = cart.length ? 'flex' : 'none';
+  cartTotalEl.textContent = '£' + total;
+  cartFooter.style.display = cart.length ? 'block' : 'none';
+
+  if (cart.length === 0) {
+    cartItemsEl.innerHTML = '<p class="cart-empty">Your cart is empty.</p>';
+    return;
+  }
+
+  cartItemsEl.innerHTML = cart.map((item, i) => `
+    <div class="cart-item">
+      <div class="cart-item-img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+      </div>
+      <div class="cart-item-info">
+        <h4>${item.title}</h4>
+        <p>${item.meta}</p>
+      </div>
+      <span class="cart-item-price">£${item.price}</span>
+      <button class="cart-item-remove" data-index="${i}">&times;</button>
+    </div>
+  `).join('');
+
+  cartItemsEl.querySelectorAll('.cart-item-remove').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.index);
+      const removed = cart.splice(idx, 1)[0];
+      // re-enable the shop card button
+      document.querySelectorAll('.shop-card').forEach(card => {
+        if (card.dataset.title === removed.title) {
+          const shopBtn = card.querySelector('.shop-btn');
+          shopBtn.textContent = 'Add to Cart';
+          shopBtn.classList.remove('added');
+          shopBtn.disabled = false;
+        }
+      });
+      updateCart();
+    });
+  });
+}
+
+document.querySelectorAll('.add-to-cart').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.shop-card');
+    const item = {
+      title: card.dataset.title,
+      price: parseInt(card.dataset.price),
+      meta: card.dataset.meta
+    };
+    cart.push(item);
+    btn.textContent = 'Added ✓';
+    btn.classList.add('added');
+    btn.disabled = true;
+    updateCart();
+    openCart();
+  });
+});
+
+document.getElementById('cartCheckout').addEventListener('click', () => {
+  alert('Online checkout coming soon! To purchase, please contact Madeleine directly:\n\n📧 townperry@yahoo.co.uk\n📞 07891 341 201');
+});
+
 // ── Navbar scroll ──
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
