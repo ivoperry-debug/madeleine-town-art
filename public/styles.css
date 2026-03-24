@@ -167,11 +167,15 @@ h3 { font-size: 1.3rem; }
   border-radius: 12px;
   padding: 20px 24px;
   color: var(--white);
-  text-align: right;
+  text-align: center;
   flex-shrink: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: background var(--tr), transform var(--tr);
 }
-.hero-badge-num { font-family: var(--font-serif); font-size: 2.2rem; color: var(--gold-l); display: block; }
-.hero-badge-label { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
+.hero-instagram:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+.hero-instagram svg { width: 28px; height: 28px; color: var(--white); margin-bottom: 2px; }
+.hero-badge-num { font-family: var(--font-sans); font-size: 1rem; font-weight: 600; color: var(--white); display: block; letter-spacing: 0.02em; }
+.hero-badge-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
 
 /* ── ARTWORK STRIP — full-bleed painting bands ── */
 .art-strip {
