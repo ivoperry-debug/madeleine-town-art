@@ -1,94 +1,94 @@
 // ── Painting data ──
 const paintings = [
   {
-    src: 'Paintings%20/IMG_7733.jpeg',
+    src: 'Paintings%20/IMG_0879.jpeg',
     title: 'Black Persian',
     meta: 'Oil on canvas · Original',
     tags: ['animals']
   },
   {
-    src: 'Paintings%20/IMG_7492.jpeg',
+    src: 'Paintings%20/IMG_5200.jpeg',
     title: 'Spotted Hyena',
-    meta: 'Mixed media on handmade paper · Original',
+    meta: 'Pastel & gouache on handmade paper · Original',
     tags: ['animals']
   },
   {
-    src: 'Paintings%20/IMG_7566.jpeg',
-    title: 'Night Dove',
-    meta: 'Acrylic on canvas board · Original',
-    tags: ['birds']
-  },
-  {
-    src: 'Paintings%20/IMG_7982.jpeg',
-    title: 'Goat Cleaners',
-    meta: 'Monoprint, 1/1 · 2000',
-    tags: ['prints']
-  },
-  {
-    src: 'Paintings%20/IMG_7984.jpeg',
+    src: 'Paintings%20/IMG_5220.jpeg',
     title: 'Song Thrush',
     meta: 'Mixed media on handmade paper · Original',
     tags: ['birds']
   },
   {
-    src: 'Paintings%20/IMG_7978.jpeg',
-    title: 'Work on Paper I',
-    meta: 'Mixed media · Original',
-    tags: ['animals']
-  },
-  {
-    src: 'Paintings%20/IMG_8020.jpeg',
-    title: 'Study in Blue',
-    meta: 'Mixed media · Original',
-    tags: ['animals']
-  },
-  {
-    src: 'Paintings%20/IMG_8053.jpeg',
-    title: 'Work on Paper II',
-    meta: 'Mixed media · Original',
-    tags: ['birds']
-  },
-  {
-    src: 'Paintings%20/IMG_8542.jpeg',
-    title: 'Moonlit Flight',
-    meta: 'Acrylic on canvas · Original',
-    tags: ['birds']
-  },
-  {
-    src: 'Paintings%20/IMG_9480.jpeg',
-    title: 'Animal Study',
-    meta: 'Mixed media · Original',
-    tags: ['animals']
-  },
-  {
-    src: 'Paintings%20/IMG_5200.jpeg',
-    title: 'Landscape with Figure',
-    meta: 'Mixed media · Original',
-    tags: ['prints']
-  },
-  {
-    src: 'Paintings%20/IMG_5220.jpeg',
-    title: 'Composition Study',
-    meta: 'Mixed media · Original',
-    tags: ['animals']
-  },
-  {
     src: 'Paintings%20/IMG_6913.jpeg',
-    title: 'Field Notes',
-    meta: 'Mixed media on paper · Original',
-    tags: ['animals']
-  },
-  {
-    src: 'Paintings%20/IMG_0879.jpeg',
-    title: 'Sketch in Colour',
-    meta: 'Mixed media · Original',
+    title: 'Goat Cleaners',
+    meta: 'Monoprint, 1/1 · 2000',
     tags: ['prints']
   },
   {
     src: 'Paintings%20/IMG_7034.jpeg',
-    title: 'Studio Work',
-    meta: 'Mixed media · Original',
+    title: 'Dove by Moonlight',
+    meta: 'Acrylic on canvas board · Original',
     tags: ['birds']
+  },
+  {
+    src: 'Paintings%20/IMG_7492.jpeg',
+    title: 'Two Figures at Night',
+    meta: 'Pastel & mixed media on paper · Original',
+    tags: ['animals']
+  },
+  {
+    src: 'Paintings%20/IMG_7566.jpeg',
+    title: 'Abstract in Black and Yellow',
+    meta: 'Monoprint on paper · Original',
+    tags: ['prints']
+  },
+  {
+    src: 'Paintings%20/IMG_7733.jpeg',
+    title: 'Crow Study',
+    meta: 'Monoprint on handmade paper · Original',
+    tags: ['birds']
+  },
+  {
+    src: 'Paintings%20/IMG_7978.jpeg',
+    title: 'Bird in Flight I',
+    meta: 'Watercolour on paper · Original',
+    tags: ['birds']
+  },
+  {
+    src: 'Paintings%20/IMG_7982.jpeg',
+    title: 'Bird in Flight II',
+    meta: 'Watercolour on paper · Original',
+    tags: ['birds']
+  },
+  {
+    src: 'Paintings%20/IMG_7984.jpeg',
+    title: 'Abstract Landscape',
+    meta: 'Oil on canvas · Original',
+    tags: ['animals']
+  },
+  {
+    src: 'Paintings%20/IMG_8020.jpeg',
+    title: 'Treecreeper',
+    meta: 'Watercolour & gouache on paper · Original',
+    tags: ['birds']
+  },
+  {
+    src: 'Paintings%20/IMG_8053.jpeg',
+    title: 'Collared Doves',
+    meta: 'Pastel on paper · Original',
+    tags: ['birds']
+  },
+  {
+    src: 'Paintings%20/IMG_8542.jpeg',
+    title: 'The Mole',
+    meta: 'Oil on paper · Original',
+    tags: ['animals']
+  },
+  {
+    src: 'Paintings%20/IMG_9480.jpeg',
+    title: 'Abstract Study',
+    meta: 'Oil on board · Original',
+    tags: ['prints']
   },
 ];
 
