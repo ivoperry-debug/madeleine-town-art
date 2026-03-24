@@ -2,7 +2,7 @@
 const paintings = [
   {
     src: 'Paintings%20/IMG_0879.jpeg',
-    title: 'Black Persian',
+    title: 'Esta',
     meta: 'Oil on canvas · Original',
     tags: ['animals']
   },
