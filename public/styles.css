@@ -159,22 +159,23 @@ h3 { font-size: 1.3rem; }
 .hero-sub {
   font-size: 1rem; color: rgba(255,255,255,0.8); margin-bottom: 32px;
 }
-.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-actions { display: flex; flex-direction: column; gap: 14px; }
+.hero-actions-row { display: flex; gap: 10px; align-items: center; }
+.hero-actions-row .btn { flex: 1; text-align: center; }
 .hero-badge {
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 12px;
-  padding: 20px 24px;
+  border-radius: 50px;
+  padding: 10px 16px;
   color: var(--white);
-  text-align: center;
+  display: flex; flex-direction: row; align-items: center; gap: 8px;
   flex-shrink: 0;
-  display: flex; flex-direction: column; align-items: center; gap: 6px;
   transition: background var(--tr), transform var(--tr);
 }
 .hero-instagram:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
-.hero-instagram svg { width: 28px; height: 28px; color: var(--white); margin-bottom: 2px; }
-.hero-badge-num { font-family: var(--font-sans); font-size: 1rem; font-weight: 600; color: var(--white); display: block; letter-spacing: 0.02em; }
+.hero-instagram svg { width: 18px; height: 18px; color: var(--white); flex-shrink: 0; }
+.hero-badge-num { font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--white); letter-spacing: 0.02em; }
 .hero-badge-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
 
 /* ── ARTWORK STRIP — full-bleed painting bands ── */
@@ -600,9 +601,6 @@ h3 { font-size: 1.3rem; }
   .form-row { grid-template-columns: 1fr; }
   .contact-form-wrap { padding: 24px; }
   .about-text { padding: 40px 28px; }
-  .hero-badge { display: flex; padding: 14px 18px; }
-  .hero-badge-num { font-size: 0.88rem; }
-  .hero-instagram svg { width: 22px; height: 22px; }
   .art-strip { height: 320px; }
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-nav { justify-content: center; }
