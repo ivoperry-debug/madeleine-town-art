@@ -190,6 +190,16 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   }, 1200);
 });
 
+// ── Newsletter form ──
+const newsletterForm = document.getElementById('newsletterForm');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('newsletterSuccess').classList.add('show');
+    newsletterForm.reset();
+  });
+}
+
 // ── Fade-in on scroll ──
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
