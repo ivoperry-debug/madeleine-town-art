@@ -159,7 +159,7 @@ h3 { font-size: 1.3rem; }
 .hero-sub {
   font-size: 1rem; color: rgba(255,255,255,0.8); margin-bottom: 32px;
 }
-.hero-actions { display: flex; flex-direction: column; gap: 14px; }
+.hero-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 .hero-actions-row { display: flex; gap: 10px; align-items: center; }
 .hero-actions-row .btn { flex: 1; text-align: center; }
 .hero-badge {
