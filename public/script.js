@@ -249,7 +249,7 @@ document.querySelectorAll('.add-to-cart').forEach(btn => {
 });
 
 document.getElementById('cartCheckout').addEventListener('click', () => {
-  alert('Online checkout coming soon! To purchase, please contact Madeleine directly:\n\n📧 townperry@yahoo.co.uk\n📞 07891 341 201');
+  alert('Online checkout coming soon! To purchase, please contact Madeleine directly:\n\n📧 madeleinetown@outlook.com\n📞 07891 341 201');
 });
 
 // ── Navbar scroll ──
